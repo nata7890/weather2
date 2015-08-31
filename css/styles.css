@@ -1,0 +1,103 @@
+aside, section, header, footer, nav {
+	display: block;
+}
+
+html, body {
+	height: 100%;
+}
+
+html, body, div, h1, h2, h3, p, img, ul, li , input, button, nav {
+	margin: 0;
+	padding:0;
+}
+
+body {
+	margin: 0 auto;
+	font: 100% tahoma, sans-serif;
+	/* background: #2e5a75;*/
+	width: 100%;
+	background-color: #2e5a75;
+}
+
+header {
+	padding-top: 1%;
+	background: #122e39; /*#153543;*/
+	position: relative;
+}
+
+#wrapper {
+	width: 90%;
+    max-width: 900px;
+	margin: auto;
+	background: #2e5a75;
+	height: 100%;
+}
+
+.logo {
+	width: 200px;
+	margin: 2px;
+	padding-left: 2%;
+}
+
+form {
+    display:inline-block;
+    overflow:hidden;
+    position: absolute;
+	top: 55px;
+	left: 70%;
+	height: 22px;
+}
+
+.search  {
+	width:150px;
+	color: #033076;
+	font-style: italic;
+	height: 22px;
+	background-color: #fbfaf6;
+}
+
+.search-button {
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 35px;
+}
+
+nav {
+	background-color: #153543;
+	width: 100%;
+	margin-top: 1%;
+}
+
+nav li {
+	display: inline-block;
+	padding: 1%;
+}
+
+a {
+	text-decoration: none;
+	color: #63bbdb; /*#7B798F;*/
+	border-bottom: 1px dotted #63bbdb;
+}
+
+a:hover {
+	color: #fbfaf6;
+	border-bottom: 1px solid #fbfaf6;
+}
+
+.active {
+	color: #2e5a75;
+}
+
+table {
+	margin-top: 5%;
+	width: 100%;
+	border: 2px solid #122e39;
+	background-color: #63bbdb;
+}
+
+#locations_table th, td {
+	width: 20%
+}
+
+
+

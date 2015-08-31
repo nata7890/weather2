@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Weather for everyone</title>
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+    </head>
+    <body>
+		<div id = "wrapper">
+		<header>
+		    <h1><img src = "images/logo.png" alt = "Weather for everyone logo" class = "logo" ></h1>
+            <form>
+                <input type="search" name="find_location" placeholder = "Choose a location" autofocus class = "search" />
+                <button type="submit" value="Search" onclick = "" name = "search" class = "search-button" ><img src="images/search-icon.png" /></button>
+            </form>
+			<nav>
+                <ul>
+                    <li class = "active">For a weak</li>
+                    <li>
+                        <a href = "month.html">For a month</a> 
+                    </li>
+                    <li>
+                        <a href = "locations.html">By locations</a>
+                    </li>
+                </ul>
+            </nav>    
+        </header>    
+        
+        <div class = "main">
+			<table>
+				<tr>
+					<td id = "first-td" class = "first-top first-bottom" rowspan = "6">
+						<h2 class = "location"></h2>
+						<h2>Today</h2>
+						<img src = "" id = "main_image">
+						<p id = "C_at_the_moment">C</p>
+						<p id = "F_at_the_moment">F</p>
+						<section>
+							<p id = "condition"></p>
+							<p id = "C_high_low">C</p>
+							<p id = "F_high_low">F</p>
+							<ul class = "descriptions">
+							</ul>
+						</section>
+						<section>
+							<h3 id = "wind">Wind</h3>
+							<ul class = "descriptions">
+							</ul>
+						</section>
+					</td>
+					<td class = "last-top">
+						<p>Tomorrow</p>
+						<img src = "" class = "weather_icon">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p></p>
+						<img src = "" class = "weather_icon">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p></p>
+						<img src = "" class = "weather_icon">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p></p>
+						<img src = "" class = "weather_icon">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p></p>
+						<img src = "" class = "weather_icon">
+					</td>
+				</tr>
+				<tr>
+					<td class = "last-bottom">
+						<p></p>
+						<img src = "" class = "weather_icon">
+					</td>
+				</tr>
+			</table>
+        </div>
+	</div>
+	</body>
+</html>

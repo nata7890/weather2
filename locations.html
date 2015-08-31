@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset = "UTF-8">
+        <title>Weather for everyone</title>
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+		<link rel="stylesheet" href="css/locations-styles.css" type="text/css">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>	
+    </head>
+    <body>
+		<div id = "wrapper">
+        <header>
+			<h1><img src = "images/logo.png" alt = "Weather for everyone logo"class = "logo"></h1>
+            <form>
+                <input id = "pac-input" type="search" name="find_location" placeholder = "Choose a location" autofocus class = "search" />
+				<!--<input id="pac-input" class="controls" type="text" placeholder="Enter a location">-->
+                <!--<button type="submit" value="Search" name = "search" class = "search-button" ><img src="images/search-icon.png" /></button>-->
+            </form>
+			<nav>
+                <ul>
+                    <li>
+                        <a href = "index.html">For a weak</a>
+                    </li>
+                    <li>
+                        <a href = "month.html">For a month</a> 
+                    </li>
+                    <li class = "active">By locations</li>
+                </ul>
+            </nav>    
+           
+        </header>
+        <div class = "main">
+		<div id="lat"></div>
+		<div id="long"></div>
+            <table id = "locations_table">
+                <tr id = "date">
+                    <th>Location</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td id = "location"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+                </tr>
+                <tr>
+                    <td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+                </tr>
+                <tr>
+                    <td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+                </tr>
+                <tr>
+                    <td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+                </tr>
+            </table>
+		
+        </div>
+		</div>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+        <script src="scripts/weatherService.js"></script>
+        <!--<script src="scripts/script.js"></script>-->
+		
+    </body>
+</html>
