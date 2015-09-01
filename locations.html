@@ -5,8 +5,7 @@
         <meta charset = "UTF-8">
         <title>Weather for everyone</title>
         <link rel="stylesheet" href="css/styles.css" type="text/css">
-		<link rel="stylesheet" href="css/locations-styles.css" type="text/css">
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>	
+		
     </head>
     <body>
 		<div id = "wrapper">
@@ -33,49 +32,14 @@
         <div class = "main">
 		<div id="lat"></div>
 		<div id="long"></div>
-            <table id = "locations_table">
-                <tr id = "date">
-                    <th>Location</th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td id = "location"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-                </tr>
-                <tr>
-                    <td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-                </tr>
-                <tr>
-                    <td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-                </tr>
-                <tr>
-                    <td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-                </tr>
-            </table>
+            <div id = "speed">
+			</div>
 		
         </div>
 		</div>
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!--<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>-->
         <script src="scripts/weatherService.js"></script>
         <!--<script src="scripts/script.js"></script>-->
 		

@@ -6,7 +6,7 @@ html, body {
 	height: 100%;
 }
 
-html, body, div, h1, h2, h3, p, img, ul, li , input, button, nav {
+html, body, div, h1, h2, h3, h4, p, img, ul, li , input, button, nav {
 	margin: 0;
 	padding:0;
 }
@@ -28,6 +28,7 @@ header {
 #wrapper {
 	width: 90%;
     max-width: 900px;
+	min-width: 515px;
 	margin: auto;
 	background: #2e5a75;
 	height: 100%;
@@ -56,11 +57,11 @@ form {
 	background-color: #fbfaf6;
 }
 
-.search-button {
+/*.search-button {
   padding-top: 0;
   padding-bottom: 0;
   width: 35px;
-}
+}*/
 
 nav {
 	background-color: #153543;
@@ -95,9 +96,14 @@ table {
 	background-color: #63bbdb;
 }
 
-#locations_table th, td {
-	width: 20%
+th, td {
+	width: 20%;
+	text-align: center;
 }
 
-
-
+.icon {
+	max-width: 90px;
+	max-height: 90px;
+	display: block;
+	margin: auto;
+}
