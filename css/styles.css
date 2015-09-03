@@ -6,7 +6,7 @@ html, body {
 	height: 100%;
 }
 
-html, body, div, h1, h2, h3, h4, p, img, ul, li , input, button, nav {
+html, body, div, h1, h2, h3, h4, p, img, ul, li , input, button, nav, table, tr, td {
 	margin: 0;
 	padding:0;
 }
@@ -47,6 +47,7 @@ form {
 	top: 55px;
 	left: 70%;
 	height: 22px;
+	margin-right: 1%;
 }
 
 .search  {
@@ -91,19 +92,98 @@ a:hover {
 
 table {
 	margin-top: 5%;
+	margin-bottom: 5%;
 	width: 100%;
 	border: 2px solid #122e39;
 	background-color: #63bbdb;
+	color: #122e39;
 }
 
-th, td {
+#weatherTableLocations > * {
 	width: 20%;
 	text-align: center;
 }
 
 .icon {
-	max-width: 90px;
-	max-height: 90px;
+	max-width: 60px;
+	max-height: 60px;
 	display: block;
 	margin: auto;
+}
+
+#first-td {
+	width: 68%;
+}
+
+#first-td  > h2 {
+	padding: 1%;
+	margin-left: 5%;
+	font-weight: normal;
+	font-size: 150%;
+}
+
+#first-td  > h2:first-child {
+	font-size: 230%;
+}
+
+#first-picture {
+	display: block;
+	max-width: 335px;
+	max-height: 240px;
+	margin: auto;
+	margin-top: 2%;
+	border: 2px solid #122e39;
+	padding: 1%;
+	background-color: #fbfaf6;
+	margin-bottom: 1%;
+}
+
+#today-t {
+	padding: 1%;
+	margin-left: 5%;
+	font-size: 205%;
+	font-weight: normal;
+}
+
+.column {
+	padding: 1%;
+	margin: 1%;
+	margin-left: 5%;
+	float: left;
+	border-top: 1px solid #122e39;
+}
+
+.column h3, p {
+	padding-bottom: 0.7%;
+}
+
+#second-column {
+	float: right;
+	margin-right: 5%;
+}
+
+#weatherTableIndex  td:not(#first-td) {
+	padding: 0.5%;
+	
+}
+
+#weatherTableIndex  td:not(#first-td) .icon {
+	display: block;
+	float: left;
+	margin: 0.5%;
+}
+
+#weatherTableIndex  td:not(#first-td) > h3 {
+	font-weight: normal;
+	font-size: 130%;
+}
+
+#weatherTableIndex  td:not(#first-td) > h4 {
+	margin-left: 35%;
+	margin-top: 1%;
+}
+
+#weatherTableIndex  td:not(#first-td) > p {
+	margin-left: 35%;
+	margin-top: 1%;
 }
